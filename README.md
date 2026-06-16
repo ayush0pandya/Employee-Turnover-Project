@@ -1,22 +1,44 @@
 # Employee Turnover Project
+A supervised machine learning project that predicts employee turnover using Logistic Regression, built on an HR analytics dataset.
 
-## Overview
-A logistic regression project to predict employee turnover based on workplace and demographic features (job satisfaction, performance rating, tenure, income, work-life balance, and more). Three model variants were trained and compared:
+---
+## Dataset
+The dataset contains 1,350 records with 15 features describing various attributes of employees, including job satisfaction, performance rating, tenure, work-life balance, income, and the target variable — `Employee_Turnover`.
 
-1. Baseline Logistic Regression (no penalty)
-2. Logistic Regression with explicit L1 regularization
-3. Logistic Regression with explicit L2 regularization
+---
+## Project Workflow
+1. **Exploratory Data Analysis (EDA)** — inspected shape, data types, and null values
+2. **Train / Test Split** — 80/20 split using `train_test_split`
+3. **Model Training** — trained three Logistic Regression variants: a baseline model with no penalty, a model with explicit L1 regularization, and a model with explicit L2 regularization
+4. **Evaluation** — assessed and compared model performance using Accuracy and Precision
 
+---
 ## Results
 | Model | Accuracy | Precision |
 |---|---|---|
-| Baseline (no penalty) | see notebook | see notebook |
-| L1 Regularization | see notebook | see notebook |
-| L2 Regularization | see notebook | see notebook |
+| Baseline (no penalty) | — | — |
+| L1 Regularization | — | — |
+| L2 Regularization | — | — |
 
-The L1-regularized model performed best on accuracy and precision among the three. Evaluation was limited to these two metrics; recall and F1-score are noted as potential follow-up work.
+The L1-regularized model performed best on accuracy and precision among the three.
 
+---
+## Tech Stack
+- Python 3.13
+- pandas
+- seaborn
+- scikit-learn
+
+---
 ## Files
-- `Employee Turnover Project.ipynb` — full notebook (data loading, train/test split, model training, evaluation)
-- `employee_turnover.csv` — dataset
-- `requirements.txt` — Python dependencies
+| File | Description |
+|---|---|
+| `Employee Turnover Project.ipynb` | Main notebook with full pipeline |
+| `employee_turnover.csv` | Dataset |
+
+---
+## What I Learned
+- How to set up a baseline Logistic Regression model before tuning
+- The difference between L1 and L2 regularization and how each affects model coefficients
+- How to compare regularized models against a baseline using Accuracy and Precision
+- That Accuracy and Precision alone are not sufficient for evaluating turnover prediction, where Recall and F1-score matter for catching employees likely to leave
