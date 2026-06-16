@@ -16,9 +16,9 @@ The dataset contains 1,350 records with 15 features describing various attribute
 ## Results
 | Model | Accuracy | Precision |
 |---|---|---|
-| Baseline (no penalty) | — | — |
-| L1 Regularization | — | — |
-| L2 Regularization | — | — |
+| Baseline (no penalty) | 0.8593 | 0.8595 |
+| L1 Regularization | 0.8667 | 0.8739 |
+| L2 Regularization | 0.8593 | 0.8718 |
 
 The L1-regularized model performed best on accuracy and precision among the three.
 
